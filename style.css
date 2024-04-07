@@ -1,0 +1,137 @@
+*{ 
+    margin: 0; 
+    padding: 0;  
+    font: "Gilroy"; 
+    box-sizing: border-box;
+} 
+html,body{  
+    
+    width:100% ;
+    height:100%; 
+}  
+#main{  
+    display: flex;
+    width:100% ;
+    height:100%; 
+    
+}
+#part1{  
+    position: relative;
+    height:100%; 
+    width:50% ;  
+     background-image: url(https://wallpapercave.com/wp/wp9640385.jpg); 
+     background-position: center; 
+     background-size: cover;
+    
+}   
+ #textcentre{ 
+    position: absolute; 
+    top: 50% ; 
+    left:50% ; 
+    transform: translate(-50%,-50%); 
+    color: #ffffffe7
+        
+    
+} 
+#textcentre h1{ 
+    font-size: 70px;  
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: blanchedalmond;
+} 
+#textcentre p{ 
+    font-size: 38px; 
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(255, 228, 196);
+}
+#nav{  
+    display: flex; 
+    justify-content: space-between;
+    width:100% ; 
+    padding: 20px 30px;
+}  
+.ri-arrow-left-line{ 
+    color: antiquewhite; 
+}
+#lnav a{ 
+   margin: 20px; 
+   text-decoration:none ;  
+    color: antiquewhite;  
+    font-weight: 700;
+}
+#part2{ 
+    height:100%; 
+    width:50%  ; 
+    
+} 
+#partone{ 
+   display: flex; 
+   height: 50%; 
+   width: 100% ; 
+   
+}  
+
+#myone{ 
+    height: 100%; 
+    width: 60%;  
+    background-image: url(https://i.pinimg.com/originals/25/0d/46/250d466c6b3469beb74271b95f82a26c.jpg);  
+    background-position: centre; 
+    background-size: cover;
+} 
+#mytwo{ 
+    height: 100%; 
+    width: 70%;  
+    background-image: url(https://i.pinimg.com/736x/ad/59/9e/ad599e7662374afc05de27ed2f224c7e--gabriel-aubry-beautiful-celebrities.jpg); 
+    background-position: top; 
+    background-size: cover;
+}
+#parttwo{ 
+    height: 50%; 
+    width: 100% ; 
+    background-image: url(https://wallpapercave.com/wp/wp8065026.jpg); 
+    background-position: centre; 
+    background-size: cover;
+}  
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Apply the animation to the H1 tag */
+  h1 {
+    animation: fadeIn 7s ease-in-out infinite; /* You can adjust the duration and timing function as needed */
+  }
+ p{ 
+    animation: fadeIn 7s ease-in-out infinite; 
+ } 
+ @keyframes backgroundSlideOne {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+@keyframes backgroundfadeInTwo {
+    0% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+} 
+#myone {
+    background-image: url('https://i.pinimg.com/originals/25/0d/46/250d466c6b3469beb74271b95f82a26c.jpg');
+    background-size: cover;
+    animation: backgroundSlideOne 5s linear infinite; /* 5s duration, linear easing, infinite loop */
+}
+
+#mytwo {
+    background-image: url('https://i.pinimg.com/736x/ad/59/9e/ad599e7662374afc05de27ed2f224c7e--gabriel-aubry-beautiful-celebrities.jpg');
+    background-size: cover;
+    animation: backgroundSlideOne 5s linear infinite; /* 5s duration, linear easing, infinite loop */
+}
